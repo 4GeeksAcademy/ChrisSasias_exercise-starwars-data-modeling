@@ -51,13 +51,6 @@ class Users(Base):
     email = Column(String(250))
     password = Column(String(250))
 
-def to_dict(self):
-        return {
-            'id': self.id,
-            'favorites_id': self.favorites_id,
-            'username': self.username,
-            'email': self.email
-       }
 
 ## Draw from SQLAlchemy base
 render_er(Base, 'diagram.png')
